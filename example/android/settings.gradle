@@ -1,0 +1,6 @@
+rootProject.name = 'OrientationExample'
+
+include ':app'
+
+include ':react-native-orientation-view'
+project(':react-native-orientation-view').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-orientation-view/android')

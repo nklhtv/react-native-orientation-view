@@ -1,2 +1,8 @@
 /.vscode
 .DS_Store
+/example/node_modules/
+.gradle
+.idea
+/example/android/app/build
+/example/android/build
+*.iml
