@@ -2,6 +2,9 @@
 
 ### This component gives you an alternative way of writing orientation(size) specific UI in ReactNative by changing the ui on the UI Thread instead of JS thread.
 
+### This plugin exports three react components: `OrientationView`, `LandscapeView`, `PortraitView`.
+### OrientationView render its content based on its size.
+
 #### How would you do the same using this plugin:
 ```javascript
 render() {
