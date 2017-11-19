@@ -4,6 +4,7 @@
 
 ### This plugin exports three react components: `OrientationView`, `LandscapeView`, `PortraitView`.
 ### OrientationView render its content based on its size.
+### The [iOS implementation](https://github.com/NikolaBorislavovHristov/react-native-orientation-view/blob/master/orientationView/orientationView.ios.js) is not native yet and fallbacks to the Dimensions approach. It requires one additional property, `initialIsInPortrait`.
 
 #### How would you do the same using this plugin:
 ```javascript
