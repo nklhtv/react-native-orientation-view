@@ -6,3 +6,4 @@
 /example/android/app/build
 /example/android/build
 *.iml
+/android/build
