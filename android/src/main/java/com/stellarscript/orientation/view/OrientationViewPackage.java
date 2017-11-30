@@ -25,7 +25,8 @@ public final class OrientationViewPackage implements ReactPackage {
     @Override
     public List<ViewManager> createViewManagers(final ReactApplicationContext reactApplicationContext) {
         return Arrays.<ViewManager>asList(
-                new OrientationViewManager(),
+                new RootOrientationViewManager(),
+                new ParentOrientationViewManager(),
                 new PortraitViewManager(),
                 new LandscapeViewManager());
     }

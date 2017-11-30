@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import PortraitView from '../portraitView';
 import LandscapeView from '../landscapeView';
 
-class OrientationView extends Component {
+class ParentOrientationView extends Component {
     constructor(props) {
         super(props);
 
@@ -34,12 +34,12 @@ class OrientationView extends Component {
     }
 }
 
-OrientationView.propTypes = {
+ParentOrientationView.propTypes = {
     initialIsInPortrait: PropTypes.bool.isRequired
 };
 
-OrientationView.defaultProps = {
+ParentOrientationView.defaultProps = {
     initialIsInPortrait: true
 };
 
-export default OrientationView;
+export default ParentOrientationView;

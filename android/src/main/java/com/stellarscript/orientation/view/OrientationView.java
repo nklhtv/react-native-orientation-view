@@ -11,7 +11,7 @@ import com.facebook.react.views.view.ReactViewGroup;
 
 import java.util.HashSet;
 
-final class OrientationView extends ReactViewGroup {
+abstract class OrientationView extends ReactViewGroup {
 
     private static final String TAG = OrientationView.class.getSimpleName();
 
@@ -23,6 +23,8 @@ final class OrientationView extends ReactViewGroup {
         mAllChildren = new HashSet<>();
         mHiddenChildren = new HashSet<>();
     }
+
+    abstract boolean isInPortrait();
 
     @Override
     public void onViewAdded(final View child) {
@@ -46,9 +48,7 @@ final class OrientationView extends ReactViewGroup {
     protected void onLayout(final boolean changed, final int left, final int top, final int right, final int bottom) {
         super.onLayout(changed, left, top, right, bottom);
         if (changed) {
-            final int height = getHeight();
-            final int width = getWidth();
-            final boolean isInPortrait = height >= width;
+            final boolean isInPortrait = isInPortrait();
             final HashSet<View> childrenToHide = new HashSet<>();
             final HashSet<View> childrenToAdd = new HashSet<>();
             final HashSet<View> childrenToRemove = new HashSet<>();

@@ -1,9 +1,11 @@
-import OrientationView from './orientationView';
+import ParentOrientationView from './parentOrientationView';
+import RootOrientationView from './rootOrientationView';
 import PortraitView from './portraitView';
 import LandscapeView from './landscapeView';
 
 export {
-    OrientationView,
+    ParentOrientationView,
+    RootOrientationView,
     PortraitView,
     LandscapeView
 };
