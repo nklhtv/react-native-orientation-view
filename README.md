@@ -1,5 +1,7 @@
 # react-native-orientation-view
 
+Move over to [Stremio/react-native-orientation-view](https://github.com/Stremio/react-native-orientation-view)
+
 ### This component gives you an alternative way of writing orientation(size) specific UI in ReactNative by changing the ui on the UI Thread instead of JS thread.
 
 ### This plugin exports three react components: `OrientationView`, `LandscapeView`, `PortraitView`.
